@@ -220,6 +220,7 @@
 	 	 <div class="large-4 columns hide-for-small">
  			<h4>Get In Touch!</h4><hr/>
  			<a href="#" class="button radius full">Contact Us</a>
+ 			<br />
 	 	</div>
 	 </div>
 
