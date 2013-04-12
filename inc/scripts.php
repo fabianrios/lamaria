@@ -32,23 +32,30 @@
 	
 	<script src="js/foundation/foundation.topbar.js"></script>
 	
-  
   <script>
     $(document).foundation();
-    
-    $(document).ready(function(){
+  </script>
+  
+  <script src="js/vendor/jquery.min.js"></script>
+  <script>
+ 	  $(document).ready(function(){
  	
- 	$('#p').click(function(e){
+ 	$('#p, #view').click(function(e){
  		e.preventDefault();
  		$('.top-bar-section ul li').removeClass('active');
-		$("html, body").animate({ scrollTop: 506 }, "slow");
+		$("html,body").animate({ scrollTop: 506 }, 'slow');
 		$(this).addClass('active');
 		return false; 
  	});
  	$('#s').click(function(e){
  		e.preventDefault();
  		$('.top-bar-section ul li').removeClass('active');
-		$("html, body").animate({ scrollTop: 1506 }, "slow");
+		$("html, body").animate({ scrollTop: 1426 }, "slow");
+		$(this).addClass('active');
+ 	});
+ 	$('#home').click(function(e){
+ 		e.preventDefault();
+		$("html, body").animate({ scrollTop: 0 }, "fast");
 		$(this).addClass('active');
  	});
  	
@@ -62,5 +69,6 @@
 	   
 	   
       });
-	});
-  </script>
+	}); 	
+  </script> 
+ 

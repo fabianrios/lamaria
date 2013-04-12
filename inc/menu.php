@@ -4,8 +4,8 @@
 	      <!-- Title Area -->
 	      <li class="name">
 	        <h1>
-	          <a href="#">
-	            LAMARIA
+	          <a href="" id="home">
+	            LA MARIA
 	          </a>
 	        </h1>
 	      </li>
@@ -40,7 +40,7 @@
 				<h4 class="sanchez no-margin light whitetxt">- Los Angeles Multimedia Arts & Rich internet Applications -</h4>
 			</div>
 			<div class="large-3 columns">
-				<a href="#" class="button large">View our Work</a>
+				<a href="#" id="view" class="button large">View our Work</a>
 			</div>
 		</div>
 	</div>  
