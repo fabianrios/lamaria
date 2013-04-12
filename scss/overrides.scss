@@ -1,0 +1,10 @@
+.top-bar-section ul{
+  background: rgba(50,50,50,.0);
+}
+
+.top-bar{
+  &:hover{
+    background: rgba(0,0,0,.5);
+    border-bottom: 1px solid rgba(255,255,255,.5);
+  }
+}

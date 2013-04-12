@@ -1,0 +1,8 @@
+*.class
+*.pyc
+*.pyo
+.svn
+_svn
+.sass-cache
+.project
+.DS_Store

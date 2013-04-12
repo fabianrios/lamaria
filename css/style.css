@@ -1,0 +1,253 @@
+/* line 26, ../scss/style.scss */
+.sanchez {
+  font-family: 'Sanchez', serif;
+}
+
+/* line 30, ../scss/style.scss */
+.no-margin {
+  margin: 0;
+}
+
+/* line 34, ../scss/style.scss */
+.upper {
+  text-transform: uppercase;
+}
+
+/* line 38, ../scss/style.scss */
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* line 42, ../scss/style.scss */
+.full {
+  width: 100%;
+}
+
+/* line 50, ../scss/style.scss */
+.light {
+  font-weight: 200;
+}
+
+/* line 53, ../scss/style.scss */
+.book {
+  font-weight: 300;
+}
+
+/* line 56, ../scss/style.scss */
+.normal {
+  font-weight: 400;
+}
+
+/* line 59, ../scss/style.scss */
+.semi-bold {
+  font-weight: 600;
+}
+
+/* line 62, ../scss/style.scss */
+.bold {
+  font-weight: 700;
+}
+
+/* line 65, ../scss/style.scss */
+.ultra-bold {
+  font-weight: 900;
+}
+
+/* line 69, ../scss/style.scss */
+.fixed {
+  position: fixed;
+  width: 100%;
+}
+
+/* line 74, ../scss/style.scss */
+.bluetxt {
+  color: #2BA6CB;
+}
+
+/* line 78, ../scss/style.scss */
+.head-title {
+  margin-top: 50px;
+}
+
+/* line 82, ../scss/style.scss */
+.image-banner {
+  background: url(../assets/images/banner.jpg) no-repeat center center;
+  background-size: cover;
+  height: 550px;
+  width: 100%;
+}
+
+/* line 89, ../scss/style.scss */
+.header {
+  position: relative;
+  top: 200px;
+}
+/* line 92, ../scss/style.scss */
+.header h4 {
+  background: rgba(0, 0, 0, 0.6);
+  width: auto;
+  display: inline-block;
+}
+/* line 97, ../scss/style.scss */
+.header a {
+  margin-top: 50px;
+  float: right;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 104, ../scss/style.scss */
+.whitetxt {
+  color: #fff;
+}
+
+/* line 110, ../scss/style.scss */
+.portfolio img {
+  border-bottom: 3px solid #000;
+  width: 100%;
+}
+/* line 6, ../scss/style.scss */
+.portfolio li:before {
+  content: "";
+  position: relative;
+  float: right;
+  top: 20px;
+  display: block;
+  background-color: white;
+  width: 0;
+  /* Firefox 3.0 damage limitation */
+  right: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 0;
+  /*right*/
+  border-color: white white #aaabad #aaabad;
+  /*right*/
+}
+
+/* line 120, ../scss/style.scss */
+.more h6 {
+  background-color: #fff;
+  color: #000;
+  margin: 4px;
+  text-align: center;
+}
+/* line 126, ../scss/style.scss */
+.more .info {
+  padding: 10px;
+  border-top: 3px solid #CCCCCC;
+  background-color: #F2F2F2;
+}
+/* line 130, ../scss/style.scss */
+.more .info p {
+  line-height: 1.3;
+  font-size: 13px;
+  margin-bottom: 5px;
+  min-height: 65px;
+}
+
+/* line 144, ../scss/style.scss */
+.panoramic li {
+  display: inline-block;
+  float: left;
+}
+/* line 153, ../scss/style.scss */
+.panoramic.item-1 li {
+  width: 100%;
+}
+/* line 153, ../scss/style.scss */
+.panoramic.item-2 li {
+  width: 50%;
+}
+/* line 153, ../scss/style.scss */
+.panoramic.item-3 li {
+  width: 33.33333%;
+}
+/* line 153, ../scss/style.scss */
+.panoramic.item-4 li {
+  width: 25%;
+}
+/* line 153, ../scss/style.scss */
+.panoramic.item-5 li {
+  width: 20%;
+}
+/* line 153, ../scss/style.scss */
+.panoramic.item-6 li {
+  width: 16.66667%;
+}
+/* line 153, ../scss/style.scss */
+.panoramic.item-7 li {
+  width: 14.28571%;
+}
+/* line 153, ../scss/style.scss */
+.panoramic.item-8 li {
+  width: 12.5%;
+}
+
+/* line 161, ../scss/style.scss */
+blockquote {
+  margin: 50px auto;
+  width: 90%;
+}
+
+/* line 167, ../scss/style.scss */
+.services h3 {
+  margin: 30px 0;
+  text-align: center;
+}
+/* line 170, ../scss/style.scss */
+.services h3:after {
+  content: '{';
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  display: block;
+  font-size: 40px;
+}
+/* line 180, ../scss/style.scss */
+.services h3:before {
+  content: '}';
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  display: block;
+  color: lightgray;
+  font-size: 40px;
+}
+/* line 192, ../scss/style.scss */
+.services h5 {
+  font-family: 'Sanchez';
+}
+/* line 195, ../scss/style.scss */
+.services p {
+  height: 150px;
+  overflow: hidden;
+}
+/* line 198, ../scss/style.scss */
+.services p:after {
+  content: '...';
+}
+
+/* line 204, ../scss/style.scss */
+::selection {
+  background: #f094b7;
+  color: #555;
+}
+
+/* line 209, ../scss/style.scss */
+::-moz-selection {
+  background: #f094b7;
+  color: #555;
+}
+
+/* line 214, ../scss/style.scss */
+::-webkit-selection {
+  background: #f094b7;
+  color: #555;
+}

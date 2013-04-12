@@ -1,0 +1,218 @@
+@import 'compass/css3';
+
+
+
+@mixin arrowcorner($color:#AAABAD, $bg:#fff, $bw: 20px , $side: 'right'){ 
+     &:before {
+     content:"";
+     position:relative;
+     float:#{$side};
+     top:$bw;
+     display:block;
+     background-color: $bg;
+     width:0; /* Firefox 3.0 damage limitation */
+     #{$side}: 0;      
+     border-style:solid;
+       @if $side == 'right' {
+       border-width:0 $bw $bw 0; /*right*/
+       border-color:$bg $bg $color $color;/*right*/
+       } @else if $side == 'left' {
+       border-width:0 0 $bw $bw ; /*left*/
+       border-color:$bg $color $color $bg; /*left*/ 
+      }
+     }
+}
+
+.sanchez{
+  font-family: 'Sanchez', serif;
+}
+
+.no-margin{
+  margin: 0;
+}
+
+.upper{
+  text-transform: uppercase;
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
+
+.full{
+  width: 100%;
+}
+
+.title{
+  
+}
+
+.light{
+  font-weight: 200;
+}
+.book{
+  font-weight: 300;
+}
+.normal{
+  font-weight: 400;
+}
+.semi-bold{
+  font-weight: 600;
+}
+.bold{
+  font-weight: 700;
+}
+.ultra-bold{
+  font-weight: 900;
+}
+
+.fixed{
+  position: fixed;
+  width: 100%;
+}
+
+.bluetxt{
+  color: #2BA6CB;
+}
+
+.head-title{
+  margin-top: 50px;
+}
+
+.image-banner{
+  background: url(../assets/images/banner.jpg) no-repeat center center;
+  background-size: cover;
+  height: 550px;
+  width: 100%;
+}
+
+.header{
+  position: relative;
+  top: 200px;
+  h4{
+    background: rgba(0,0,0,.6);
+    width: auto;
+    display: inline-block;
+  }
+  a{
+    margin-top: 50px;
+    float: right;
+    @include border-radius(4px);
+  }
+}
+
+.whitetxt{
+ color: #fff; 
+}
+
+
+.portfolio{
+  img{
+    border-bottom: 3px solid #000;
+    width: 100%;
+  }
+  li{
+    @include arrowcorner;
+  }
+}
+
+.more{
+  h6{
+    background-color: #fff;
+    color: #000;
+    margin: 4px;
+    text-align: center;
+  }
+  .info{
+    padding: 10px;
+    border-top: 3px solid #CCCCCC;
+    background-color: #F2F2F2;
+    p{
+      line-height: 1.3;
+      font-size: 13px;
+      margin-bottom: 5px;
+      min-height: 65px;
+    }
+  }
+ 
+}
+
+
+$i: 1;
+
+.panoramic {
+  li{
+    display: inline-block;
+    float: left;
+    a{
+      
+    }
+  }
+  @while $i <= 8 {
+    &.item-#{$i} {
+     li{
+        width: 100% / $i;
+        }
+    }
+    $i: $i + 1;
+  }
+}
+
+blockquote{
+ margin: 50px auto;
+ width: 90%;
+}
+
+.services{
+  h3{
+    margin: 30px 0;
+    text-align: center;
+    &:after{
+      content:'{'; 
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+      display: block;
+      font-size: 40px;
+    }
+    &:before{
+      content:'}';
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+      display: block;
+      color: lightgray;
+      font-size: 40px;
+    }
+   }
+   h5{
+     font-family: 'Sanchez';
+   }
+   p{
+     height: 150px;
+     overflow: hidden;
+     &:after{
+       content:'...';
+     }
+   }
+}
+
+::selection {
+background:#f094b7;
+color:#555;
+}
+
+::-moz-selection {
+background:#f094b7;
+color:#555;
+}
+
+::-webkit-selection {
+background:#f094b7;
+color:#555;
+}
+
