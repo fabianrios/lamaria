@@ -8,12 +8,12 @@
     <div class="large-12 columns">
 		<h2 class="head-title">Portfolio <span class="bluetxt">- a collection of our latest and prominent work -</span> </h2>
 		<hr />
-		<dl class="sub-nav">
+		<dl class="sub-nav" id="filters">
 		  <dt>Filter:</dt>
-		  <dd class="active"><a href="#">All</a></dd>
-		  <dd><a href="#">Web</a></dd>
-		  <dd><a href="#">Installations</a></dd>
-		  <dd><a href="#">Programming</a></dd>
+		  <dd class="active"><a data-filter="*" href="#">All</a></dd>
+		  <dd><a href="#" data-filter=".web">Web</a></dd>
+		  <dd><a href="#" data-filter=".installation">Installations</a></dd>
+		  <dd><a href="#" data-filter=".programming">Programming</a></dd>
 		</dl>
     </div>
   </div>
@@ -22,7 +22,7 @@
     <div class="large-12 columns">
       <ul class="small-block-grid-2 large-block-grid-4 portfolio">
 
-        <li>
+        <li class="installation">
           <img src="http://estebanrey.net/wp-content/uploads/2012/06/propuestaPort3-301x251.jpg" />
           <div class="more">
           	<h6>Coloring shadows</h6>
@@ -32,7 +32,7 @@
           </div>
         </li>
 
-        <li>
+        <li class="installation">
           <img src="http://estebanrey.net/wp-content/uploads/2013/04/fire1-301x251.jpg" />
            <div class="more">
            	<h6>Fire-entices-Ice</h6>
@@ -42,7 +42,7 @@
           </div>
         </li>
         
-        <li>
+        <li class="installation">
           <img src="http://estebanrey.net/wp-content/uploads/2012/06/41.jpg" alt="" />
            <div class="more">
            	<h6>Not-even-touch screens</h6>
@@ -52,7 +52,7 @@
           </div>
         </li>
         
-        <li>
+        <li class="installation">
           <img src="http://estebanrey.net/wp-content/uploads/2012/06/LabResults2-301x251.jpg" alt="" />
            <div class="more">
            	<h6>Interactive Isles</h6>
@@ -62,7 +62,7 @@
           </div>
         </li>
         
-        <li>
+        <li class="installation">
           <img src="assets/images/projects/coltitulos1.jpg" alt="" width="300" height="250" />
            <div class="more">
            	<h6>ASCII Video</h6>
@@ -72,7 +72,7 @@
           </div>
         </li>
         
-        <li>
+        <li class="web">
           <img src="assets/images/projects/bamboo1.jpg" alt="" width="300" height="250" >
            <div class="more">
            	<h6>Bamboo Website</h6>
@@ -82,7 +82,7 @@
           </div>
         </li>
         
-        <li>
+        <li class="web">
           <img src="assets/images/projects/snappy.jpg" alt="" width="300" height="250" />
            <div class="more">
            	<h6>Snappy GO</h6>
@@ -92,7 +92,7 @@
           </div>
         </li>
         
-        <li>
+        <li class="web">
           <img src="assets/images/projects/rocket.jpg" alt="" width="300" height="250" />
            <div class="more">
            	<h6>Rocket</h6>

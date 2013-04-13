@@ -37,8 +37,28 @@
   </script>
   
   <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/jquery.isotope.min.js"></script>
+  <script src="js/vendor/jquery.imagesloaded.min.js"></script>
+  
+  
+  
   <script>
  	  $(document).ready(function(){
+ 	  	
+ 	  	
+ 	  	var $container = $('.portfolio');
+		$container.imagesLoaded(function(){
+		  $container.isotope({
+		    itemSelector : 'li',
+		    layoutMode : 'fitRows'
+		  });
+		});
+ 	
+ 		$('#filters dd a').click(function(){
+		  var selector = $(this).attr('data-filter');
+		  $container.isotope({ filter: selector });
+		  return false;
+		});
  	
  	$('#p, #view').click(function(e){
  		e.preventDefault();
@@ -58,6 +78,24 @@
 		$("html, body").animate({ scrollTop: 0 }, "fast");
 		$(this).addClass('active');
  	});
+ 	
+ 	
+ 	setInterval(changebg, 5000);
+ 	var local = true;
+ 	
+ 	function changebg (){
+    	
+	    $('.image-banner').animate({opacity: 0}, 'fast', function() {
+	        if(local){
+		        $(this).css({'background-image': 'url(assets/images/banner2.jpg)'}).animate({opacity: 1});
+		        local = false;
+	        }else if(!local){
+	        	$(this).css({'background-image': 'url(assets/images/banner.jpg)'}).animate({opacity: 1});
+	        	local = true;
+	        }
+	    });
+	};
+ 	
  	
 	 $(window).scroll(function() {
 	 	console.log($(window).scrollTop());  
